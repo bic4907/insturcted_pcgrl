@@ -1,0 +1,216 @@
+{
+  "base_prompt": "{monster} on the {direction} side, {amount_region} region(s), {amount_solution} solution(s), {amount_monster} {monster}, {amount_block} block(s).",
+  "scenarios": {
+    "1": {
+      "feature": "region",
+      "prompt": "{region}"
+    },
+    "2": {
+      "feature": "path_length",
+      "prompt": "{path_length}"
+    },
+    "3": {
+      "feature": "block",
+      "prompt": "{block}"
+    },
+    "4": {
+      "feature": "bat_amount",
+      "prompt": "{bat_amount}"
+    },
+    "5": {
+      "feature": "bat_direction",
+      "prompt": "{bat_direction}"
+    }
+  },
+  "region": {
+    "A few regions": {
+      "value": 25,
+      "similar": [
+        "A small cluster of regions",
+        "A few regions",
+        "Sparse regions",
+        "A few regions are present"
+      ]
+    },
+    "Some regions": {
+      "value": 50,
+      "similar": [
+        "Some regions",
+        "Somewhat modest regions",
+        "Some grouped regions",
+        "The map has some regions"
+      ]
+    },
+    "Several regions": {
+      "value": 75,
+      "similar": [
+        "Several regions",
+        "Moderately scattered regions",
+        "Multi-region cluster",
+        "The regions are moderately scattered"
+      ]
+    },
+    "Many regions": {
+      "value": 100,
+      "similar": [
+        "Many regions",
+        "Numerous regions",
+        "Many clustered regions",
+        "Many regions densely populate the map"
+      ]
+    }
+  },
+  "path_length": {
+    "Micro path length": {
+      "value": 10,
+      "similar": [
+        "Micro path length",
+        "Nano path length",
+        "Minimal path length",
+        "The path is extremely short, almost minimal, making it ideal for quick traversal"
+      ]
+    },
+    "Short path length": {
+      "value": 20,
+      "similar": [
+        "Short path length",
+        "Brief path length",
+        "Compact path length",
+        "The path remains brief and compact, ensuring a swift journey without unnecessary detours"
+      ]
+    },
+    "Adequate path length": {
+      "value": 40,
+      "similar": [
+        "Adequate path length",
+        "Moderate path length",
+        "Reasonable path length",
+        "The path is of moderate length, offering a balanced route that is neither too short nor too long"
+      ]
+    },
+    "Significant path length": {
+      "value": 60,
+      "similar": [
+        "Significant path length",
+        "Extended path length",
+        "Prolonged path length",
+        "The path is extended and prolonged, requiring considerable traversal effort"
+      ]
+    }
+  },
+  "bat_amount": {
+    "Few bats": {
+      "value": 5,
+      "similar": [
+        "Few bats",
+        "Small bat group",
+        "A tiny cluster of five bats appears",
+        "Few bats are scattered across the map"
+      ]
+    },
+    "Some bats": {
+      "value": 20,
+      "similar": [
+        "Some bats",
+        "Scattered bats",
+        "Some bats are spread out",
+        "Some bats spawn throughout the map"
+      ]
+    },
+    "Several bats": {
+      "value": 35,
+      "similar": [
+        "Several bats",
+        "Moderately scattered bats",
+        "Multi-bat cluster",
+        "Several bats are positioned densely"
+      ]
+    },
+    "Many bats": {
+      "value": 50,
+      "similar": [
+        "Many bats",
+        "Large bat group",
+        "Bat swarm",
+        "A substantial number of monsters are scattered across the map"
+      ]
+    }
+  },
+  "block": {
+    "Sparse blocks": {
+      "value": 40,
+      "similar": [
+        "Sparse blocks",
+        "Scattered blocks",
+        "Minimal block placement",
+        "A few blocks are scattered sparingly"
+      ]
+    },
+    "Some blocks": {
+      "value": 80,
+      "similar": [
+        "Some blocks",
+        "Somewhat balanced block placement",
+        "Some clustered blocks",
+        "Some blocks create a balanced layout with manageable obstacles"
+      ]
+    },
+    "Substantial blocks": {
+      "value": 120,
+      "similar": [
+        "Substantial blocks",
+        "Several blocks",
+        "Dense block layout",
+        "The map has a dense amount of blocks, balancing openness with obstacles"
+      ]
+    },
+    "High-density blocks": {
+      "value": 160,
+      "similar": [
+        "High-density blocks",
+        "Packed blocks",
+        "Overcrowded block area",
+        "High-density blocks crowd the map, restricting movement significantly"
+      ]
+    }
+  },
+  "bat_direction": {
+    "Bats in the west": {
+      "value": 0,
+      "similar": [
+        "Bats in the west",
+        "Bats clustered on the left",
+        "Left-side bat concentration",
+        "The bats are concentrated in the west, forming a cluster on the left side"
+      ]
+    },
+    "Bats in the north": {
+      "value": 1,
+      "similar": [
+        "Bats in the north",
+        "Bats grouped at the top",
+        "Top-focused bat distribution",
+        "The bats are gathered in the north, heavily occupying the top section"
+      ]
+    },
+    "Bats in the east": {
+      "value": 2,
+      "similar": [
+        "Bats in the east",
+        "Bats gathered on the right",
+        "Right-side bat group",
+        "Bats are predominantly positioned in the east, leaving a strong presence on the right"
+      ]
+    },
+    "Bats in the south": {
+      "value": 3,
+      "similar": [
+        "Bats in the south",
+        "Bats spread at the bottom",
+        "Bottom-heavy bat presence",
+        "Bats are spread across the south, concentrating at the bottom of the map"
+      ]
+    }
+  }
+}
+
